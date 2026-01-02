@@ -264,6 +264,10 @@ function ProductList({ onHomeClick }) {
         console.log(plant)
         dispatch(addItem(plant))
     }
+
+    const handleRemoveItem = (plant) => {
+        dispatch(removeItem(plant))
+    }
     return (
         <div>
             <div className="navbar" style={styleObj}>
